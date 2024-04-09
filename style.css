@@ -1,8 +1,15 @@
 .grid-tile {
     height: 16px;
     width: 16px; 
-    background-color: green;
+    background-color: transparent;
     border: 1px solid black;
+    margin: 2px;
+    transition: background-color 20s ease-out;
+}
+
+.grid-tile:hover {
+    background-color: black;
+    transition: background-color 0.001s ease-in;
 }
 
 .container {
@@ -10,4 +17,11 @@
     justify-content: center;
     align-items: center;
     height: 90vh;
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 352px;
+    border: 1px solid black;
 }
