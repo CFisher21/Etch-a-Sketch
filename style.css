@@ -1,15 +1,16 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 .grid-tile {
     height: 16px;
     width: 16px; 
     background-color: transparent;
     border: 1px solid black;
     margin: 2px;
-    transition: background-color 20s ease-out;
 }
 
 .grid-tile:hover {
     background-color: black;
-    transition: background-color 0.001s ease-in;
 }
 
 .container {
@@ -23,5 +24,38 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 352px;
-    border: 1px solid black;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Start with opacity 0 */
+      }
+      to {
+        opacity: 1; /* End with opacity 1 */
+      }
+}
+
+.colum {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#refresh-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 8rem;
+    height: 1.5rem;
+    border: 2px solid black;
+    background-color: skyblue;
+    margin: 16px;
+    font-weight: 700;
 }
