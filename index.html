@@ -9,9 +9,16 @@
   </head>
   <body>
     <div class="container" id="container">
+    <div class="pop-up-window" id="pop-up-window">
+        <label for="setting-slider">What size grid?:</label>
+        <input type="range" id="setting-slider" min="0" max="100" value="16">
+        <span id="sliderValue">16</span>
+        <a class="button" id="confirm-settings">Confirm</a>
+    </div>
       <div class="colum">
+        <a class="button" id="size-button">Pick a grid size</a>
         <div class="grid fade-in" id="grid"></div>
-        <a class="fade-in" id="refresh-button">Refresh</a>
+        <a class="fade-in button" id="refresh-button">Refresh</a>
       </div>
     </div>
   </body>
