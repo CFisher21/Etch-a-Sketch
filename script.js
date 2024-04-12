@@ -33,17 +33,14 @@ createGrid(16, 32);
 // Function to generate a random color
 function getRandomColor() {
     // Generate random values for red, green, and blue components
-    var red = Math.floor(Math.random() * 156) + 100; // Random integer between 100 and 255
-    var green = Math.floor(Math.random() * 156) + 100; // Random integer between 100 and 255
-    var blue = Math.floor(Math.random() * 156) + 100; // Random integer between 100 and 255
-    
+    var red = Math.floor(Math.random() * 75) + 75; // Random integer between 100 and 255
+    var green = Math.floor(Math.random() * 75) + 75; // Random integer between 100 and 255
+    var blue = Math.floor(Math.random() * 75) + 75; // Random integer between 100 and 255
     // Construct the color string in the format "rgb(red, green, blue)"
     var color = "rgb(" + red + ", " + green + ", " + blue + ")";
     
     return color;
 }
-
-
 
 const refreshButton = document.getElementById("refresh-button");
 const sizeButton = document.getElementById("size-button");
@@ -78,6 +75,7 @@ grid.addEventListener("mouseover", (event) => {
     if (event.target.classList.contains("grid-tile") && checkbox.checked) {
         randomColor = getRandomColor();
         event.target.style.backgroundColor = randomColor;
+        event.target.style.filter = "contrast(250%) brightness(150%)";
     } else {
          event.target.style.backgroundColor = "black";
     }
