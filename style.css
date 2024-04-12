@@ -3,8 +3,8 @@ body {
 }
 
 .grid-tile {
-    height: 4px;
-    width: 4px; 
+    height: 32px;
+    width: 32px; 
     background-color: transparent;
     border: 1px solid black;
     box-sizing: border-box;
@@ -92,7 +92,7 @@ body {
     font-weight: 700;
 }
 
-.size-button {
+.grid-size-button {
     background-color: grey;
     border: 2px solid black;
     padding: 8px;
