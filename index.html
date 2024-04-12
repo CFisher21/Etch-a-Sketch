@@ -10,13 +10,17 @@
   <body>
     <div class="container" id="container">
     <div class="pop-up-window" id="pop-up-window">
-        <label for="setting-slider">What size grid?:</label>
-        <input type="range" id="setting-slider" min="0" max="100" value="16">
-        <span id="sliderValue">16</span>
+        <p>What size grid?: </p>
+        <div class="row">
+        <a id="size-button-16" class="grid-size-button">16x16</a>
+        <a id="size-button-32" class="grid-size-button">32x32</a>
+        <a id="size-button-64" class="grid-size-button">64x64</a>
+        <a id="size-button-128" class="grid-size-button">128x128</a>
+      </div>
         <a class="button" id="confirm-settings">Confirm</a>
     </div>
       <div class="colum">
-        <a class="button" id="size-button">Pick a grid size</a>
+        <a class="fade-in button" id="size-button">Pick a grid size</a>
         <div class="grid fade-in" id="grid"></div>
         <a class="fade-in button" id="refresh-button">Refresh</a>
       </div>

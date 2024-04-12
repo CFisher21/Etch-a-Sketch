@@ -1,17 +1,30 @@
-function createGrid(gridsize) {
-    var gridSize = gridsize * gridsize
+const grid = document.getElementById("grid");
+var gridTile = document.getElementById("grid-tile")
 
-    for(let i = 0; i < gridSize; i++) {
+function createGrid(totalcube) {
+
+    // var newTileSize = 
+    var totalCubes = totalcube * totalcube
+
+
+    for(let i = 0; i < totalCubes; i++) {
         const newDiv = document.createElement("div");
         newDiv.classList.add("grid-tile")
+        newDiv.setAttribute("id", "grid-tile")
         grid.appendChild(newDiv)
     }
 }
 
-createGrid(16);
+
+// 16 = 32px
+// 32 = 16px
+// 64 = 8px
+// 128 = 4px
+
+createGrid(128);
 
 document.addEventListener("DOMContentLoaded", function() {
-    const grid = document.getElementById("grid");
+    
     const refreshButton = document.getElementById("refresh-button");
     const sizeButton = document.getElementById("size-button");
     var slider = document.getElementById("setting-slider");
