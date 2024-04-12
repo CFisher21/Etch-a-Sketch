@@ -9,20 +9,25 @@
   </head>
   <body>
     <div class="container" id="container">
-    <div class="pop-up-window" id="pop-up-window">
-        <p>What size grid?: </p>
+      <div class="pop-up-window" id="pop-up-window">
+        <p>What size grid?:</p>
         <div class="row">
-        <a id="size-button-16" class="grid-size-button">16x16</a>
-        <a id="size-button-32" class="grid-size-button">32x32</a>
-        <a id="size-button-64" class="grid-size-button">64x64</a>
-        <a id="size-button-128" class="grid-size-button">128x128</a>
-      </div>
+          <a id="size-button-16" class="grid-size-button">16x16</a>
+          <a id="size-button-32" class="grid-size-button">32x32</a>
+          <a id="size-button-64" class="grid-size-button">64x64</a>
+          <a id="size-button-128" class="grid-size-button">128x128</a>
+        </div>
+        
         <a class="button" id="confirm-settings">Confirm</a>
-    </div>
+      </div>
       <div class="colum">
         <a class="fade-in button" id="size-button">Pick a grid size</a>
         <div class="grid fade-in" id="grid"></div>
         <a class="fade-in button" id="refresh-button">Refresh</a>
+        <div class="row">
+          <input type="checkbox" id="random-colors" name="checkbox" class="checkbox fade-in" />
+          <label for="checkbox" class="checkbox-label fade-in">Rainbow Mode?</label>
+        </div>
       </div>
     </div>
   </body>

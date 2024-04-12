@@ -30,6 +30,19 @@ function createGrid(totalcube, pixels) {
 
 createGrid(16, 32);
 
+// Function to generate a random color
+function getRandomColor() {
+    // Generate random values for red, green, and blue components
+    var red = Math.floor(Math.random() * 156) + 100; // Random integer between 100 and 255
+    var green = Math.floor(Math.random() * 156) + 100; // Random integer between 100 and 255
+    var blue = Math.floor(Math.random() * 156) + 100; // Random integer between 100 and 255
+    
+    // Construct the color string in the format "rgb(red, green, blue)"
+    var color = "rgb(" + red + ", " + green + ", " + blue + ")";
+    
+    return color;
+}
+
 
 
 const refreshButton = document.getElementById("refresh-button");
@@ -42,7 +55,8 @@ const button16 = document.getElementById("size-button-16");
 const button32 = document.getElementById("size-button-32");
 const button64 = document.getElementById("size-button-64");
 const button128 = document.getElementById("size-button-128");
-const gridTile = document.getElementsByClassName("grid-tile")
+const gridTile = document.getElementsByClassName("grid-tile");
+const checkbox = document.getElementById("random-colors");
 
 button16.addEventListener("click", function(){
     createGrid(16, "32px");
@@ -61,10 +75,14 @@ button128.addEventListener("click", function(){
 })
 
 grid.addEventListener("mouseover", (event) => {
-    if (event.target.classList.contains("grid-tile")) {
-        event.target.style.backgroundColor = "black";
+    if (event.target.classList.contains("grid-tile") && checkbox.checked) {
+        randomColor = getRandomColor();
+        event.target.style.backgroundColor = randomColor;
+    } else {
+         event.target.style.backgroundColor = "black";
     }
 });
+
 
 refreshButton.addEventListener("click", () => {
     location.reload();
@@ -77,8 +95,6 @@ sizeButton.addEventListener("click", () => {
 confirmBtn.addEventListener("click", () => {
     popUp.style.display = "none"
 })
-
-
 
 // Adjust the value of the pop up slider
 slider.addEventListener("input", function() {
