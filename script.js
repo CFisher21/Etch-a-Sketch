@@ -94,11 +94,6 @@ confirmBtn.addEventListener("click", () => {
     popUp.style.display = "none"
 })
 
-// Adjust the value of the pop up slider
-slider.addEventListener("input", function() {
-    sliderValue.textContent = slider.value;
-});
-
 
 
 
