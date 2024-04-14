@@ -9,9 +9,7 @@ function createGrid(totalcube, pixels) {
 
     clearGrid();
 
-    // var newTileSize = 
     var totalCubes = totalcube * totalcube
-
 
     for(let i = 0; i < totalCubes; i++) {
         const newDiv = document.createElement("div");
@@ -44,8 +42,6 @@ function getRandomColor() {
 
 const refreshButton = document.getElementById("refresh-button");
 const sizeButton = document.getElementById("size-button");
-var slider = document.getElementById("setting-slider");
-var sliderValue = document.getElementById("sliderValue");
 const popUp = document.getElementById("pop-up-window");
 let confirmBtn = document.getElementById("confirm-settings");
 const button16 = document.getElementById("size-button-16");
