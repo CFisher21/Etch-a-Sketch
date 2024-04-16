@@ -38,7 +38,6 @@ This project is licensed under the [MIT License](LICENSE).
 
 - Inspired by the classic Etch-a-Sketch drawing toy.
 - Built with HTML, CSS, and JavaScript.
+- This was apart of theodinproject.com [theodinproject.com](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
 
----
 
-Feel free to customize this README to better fit your project, including adding sections like "Demo", "Roadmap", or "Changelog" as needed.
