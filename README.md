@@ -30,10 +30,6 @@ Etch-a-Sketch is a web application that replicates the classic drawing toy. User
 3. Hover over the grid tiles to draw.
 4. Use the refresh button to clear the drawing and start over.
 
-## Contributing
-
-Contributions are welcome! If you have any suggestions, bug fixes, or new features to propose, please open an issue or submit a pull request.
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
