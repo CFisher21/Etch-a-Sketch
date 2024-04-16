@@ -1,6 +1,6 @@
 # Etch-a-Sketch
 
-![Etch-a-Sketch Demo](demo.gif)
+[Live Webpage](https://cfisher21.github.io/Etch-a-Sketch/)
 
 ## Description
 
