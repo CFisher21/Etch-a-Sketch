@@ -3,7 +3,7 @@
 [Live Webpage](https://cfisher21.github.io/Etch-a-Sketch/)
 
 ## Description
-
+**This project is not intended to work on mobile**
 Etch-a-Sketch is a web application that replicates the classic drawing toy. Users can draw on a grid by hovering over grid tiles, change the grid size, and activate rainbow mode for colorful drawing experience.
 
 ## Features
